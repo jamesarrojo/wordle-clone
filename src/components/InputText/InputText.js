@@ -7,7 +7,11 @@ function InputText({ input, onInput, onSubmitGuess, guessHistory, answer }) {
             <div className="happy banner">
                 <p>
                     <strong>Congratulations!</strong> Got it in{' '}
-                    <strong>{guessHistory.length} guesses</strong>.
+                    <strong>
+                        {guessHistory.length}{' '}
+                        {guessHistory.length > 1 ? 'guesses' : 'guess'}
+                    </strong>
+                    .
                 </p>
             </div>
         );
